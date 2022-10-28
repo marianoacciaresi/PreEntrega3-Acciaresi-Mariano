@@ -63,7 +63,41 @@ li a:visited {
   background-color: #213b86;
 }
 
-@media only screen and (min-width: 10px) and (max-width: 991px) { /* Inicio Mobile */
+.subtitulo {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.subtitulo_small{
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.detalle{
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.backGroundColorBody{
+  background-color: #E4F1FE;
+}
+
+@media only screen and (min-width: 10px) and (max-width: 991px) {
+  /* Inicio Mobile */
 
   header {
     width: 100%;
@@ -161,10 +195,6 @@ li a:visited {
     margin-bottom: 5vh;
   }
 
-  .reduceFont {
-    font-size: small;
-  }
-
   .columnaFlexRowCenter {
     display: flex;
     flex-direction: column;
@@ -214,13 +244,20 @@ li a:visited {
     height: 60px;
     background-color: #F59E3A;
     font-size: medium;
-    text-align: center;    
+    text-align: center;
     font-family: cursive;
   }
 
-} /* Fin Mobile */
+  .reduceFont {
+    font-size: small;
+  }
 
-@media only screen and (min-width: 992px) { /* Inicio Desktop */
+}
+
+/* Fin Mobile */
+
+@media only screen and (min-width: 992px) {
+  /* Inicio Desktop */
 
   header {
     position: fixed;
@@ -308,7 +345,7 @@ li a:visited {
   }
 
   #fotosTorneos {
-    padding-top: 1vh;
+    padding-top: 12vh;
   }
 
   .mapaiIframe {
@@ -381,7 +418,13 @@ li a:visited {
     -ms-flex-align: center;
   }
 
-} /* Fin Desktop */
+  .reduceFont {
+    font-size: medium;
+  }
+
+}
+
+/* Fin Desktop */
 
 .image30 {
   width: 7vh;
@@ -442,7 +485,7 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-input[type=submit]:active {  
+input[type=submit]:active {
   box-shadow: 0 0.5vh #666;
   transform: translateY(1vh);
 }
@@ -565,27 +608,27 @@ input[type=submit]:active {
   grid-area: foto6;
 }
 
-.foto1:hover{
+.foto1:hover {
   opacity: 0.5;
 }
 
-.foto2:hover{
+.foto2:hover {
   opacity: 0.5;
 }
 
-.foto3:hover{
+.foto3:hover {
   opacity: 0.5;
 }
 
-.foto4:hover{
+.foto4:hover {
   opacity: 0.5;
 }
 
-.foto5:hover{
+.foto5:hover {
   opacity: 0.5;
 }
 
-.foto6:hover{
+.foto6:hover {
   opacity: 0.5;
 }
 
@@ -635,8 +678,8 @@ input[type=submit]:active {
   }
 
   25% {
-      transform: rotate(45deg);
-    }
+    transform: rotate(45deg);
+  }
 
   100% {
     opacity: 1;
