@@ -2,11 +2,12 @@
 
 En esta oportunidad, la preentrega3 contiene:
 
--   Se incorporó ....
+-   Se incorporó BootStrap
+-   Se incorporó SASS (Nesting)
 
 ## Responsive
 
-Para el comportamiento responsivo se utilizó....
+Para el comportamiento responsivo se utilizó Grid+FlexBox y BootStrap
 
 ## Entrega
 

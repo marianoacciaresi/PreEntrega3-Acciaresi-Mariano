@@ -11,24 +11,26 @@
     margin-top: 0.15vh;
     margin-bottom: 0.15vh;
     width: 100%;
-  }
-  
-  li a {
-    display: block;
-    color: WHITE;
-    text-align: center;
-    padding: 0.8vh 4.5vh;
-    text-decoration: solid;
-    background-color: #213b86;
-  }
-  
-  li a:hover {
-    background-color: #F59E3A;
-  }
-  
-  li a:visited {
-    color: #999999;
-  }
+
+    li a {
+      display: block;
+      color: WHITE;
+      text-align: center;
+      padding: 0.8vh 4.5vh;
+      text-decoration: solid;
+      background-color: #213b86;
+
+      &:hover {
+        background-color: #F59E3A;
+      }
+      
+      &:visited {
+        color: #999999;
+      }      
+
+    }    
+
+  }  
   
   .active {
     background-color: #F59E3A;
@@ -126,7 +128,6 @@
       margin-top: 2%;
   
     }
-  
   
     .footerColumn {
       display: flex;
@@ -483,16 +484,17 @@
     border: none;
     border-radius: 0.4vh;
     cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  input[type=submit]:active {
-    box-shadow: 0 0.5vh #666;
-    transform: translateY(1vh);
-  }
+
+    &:hover {
+      background-color: #45a049;
+    } 
+
+    &:active {
+      box-shadow: 0 0.5vh #666;
+      transform: translateY(1vh);
+    }
+
+  }  
   
   .noticias {
     display: flex;
@@ -562,11 +564,14 @@
     margin: 0.5vh 0.2vh;
     background: #213b86;
     color: white;
+  
+    &:hover {
+      opacity: 0.1;
+    }
+
   }
   
-  .fa:hover {
-    opacity: 0.1;
-  }
+  
   
   .galeria {
     display: grid;
@@ -590,53 +595,53 @@
   
   .foto1 {
     grid-area: foto1;
+
+    &:hover {
+      opacity: 0.5;
+    }    
   }
   
   .foto2 {
     grid-area: foto2;
+
+    &:hover {
+      opacity: 0.5;
+    }   
+
   }
   
   .foto3 {
     grid-area: foto3;
+
+    &:hover {
+      opacity: 0.5;
+    }   
   }
   
   .foto4 {
     grid-area: foto4;
+
+    &:hover {
+      opacity: 0.5;
+    }   
   }
   
   .foto5 {
     grid-area: foto5;
+
+    &:hover {
+      opacity: 0.5;
+    }   
   }
   
   .foto6 {
     grid-area: foto6;
+
+    &:hover {
+      opacity: 0.5;
+    }   
   }
-  
-  .foto1:hover {
-    opacity: 0.5;
-  }
-  
-  .foto2:hover {
-    opacity: 0.5;
-  }
-  
-  .foto3:hover {
-    opacity: 0.5;
-  }
-  
-  .foto4:hover {
-    opacity: 0.5;
-  }
-  
-  .foto5:hover {
-    opacity: 0.5;
-  }
-  
-  .foto6:hover {
-    opacity: 0.5;
-  }
-  
-  
+    
   .galeria>div {
     background-color: #464646;
   }
