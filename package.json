@@ -1,0 +1,25 @@
+{
+  "name": "preentrega3",
+  "version": "1.0.0",
+  "description": "curdoCoderWEB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss assets/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marianoacciaresi/PreEntrega3-Acciaresi-Mariano.git"
+  },
+  "author": "Mariano Acciaresi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marianoacciaresi/PreEntrega3-Acciaresi-Mariano/issues"
+  },
+  "homepage": "https://github.com/marianoacciaresi/PreEntrega3-Acciaresi-Mariano#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
