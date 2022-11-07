@@ -463,9 +463,6 @@ input[type=submit] {
   .foto6:hover {
     opacity: 0.5; }
 
-.galeria > div {
-  background-color: #464646; }
-
 .entreandor1 {
   grid-area: entreandor1; }
 

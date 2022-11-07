@@ -1,698 +1,694 @@
 @import 'variables';
 
 * {
-    font-family: 'DM Sans';
-    background-color: $color-fondo;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-    overflow: hidden;
+  font-family: 'DM Sans';
+  background-color: $color-fondo;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: $color-header_footer;
+  margin-top: 0.15vh;
+  margin-bottom: 0.15vh;
+  width: 100%;
+
+  li a {
+    display: block;
+    color: WHITE;
+    text-align: center;
+    padding: 0.8vh 4.5vh;
+    text-decoration: solid;
     background-color: $color-header_footer;
-    margin-top: 0.15vh;
-    margin-bottom: 0.15vh;
-    width: 100%;
 
-    li a {
-      display: block;
-      color: WHITE;
-      text-align: center;
-      padding: 0.8vh 4.5vh;
-      text-decoration: solid;
-      background-color: $color-header_footer;
+    &:hover {
+      background-color: $color-resaltado;
+    }
 
-      &:hover {
-        background-color: $color-resaltado;
-      }
-      
-      &:visited {
-        color: #999999;
-      }      
+    &:visited {
+      color: #999999;
+    }
 
-    }    
-
-  }  
-  
-  .active {
-    background-color: $color-resaltado;
   }
-  
-  .topBar {
-    display: flex;
+
+}
+
+.active {
+  background-color: $color-resaltado;
+}
+
+.topBar {
+  display: flex;
+  width: 100%;
+  background-color: $color-header_footer;
+  color: white;
+  align-items: center;
+  align-content: center;
+}
+
+.topBarColumn {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  text-decoration: none;
+  background-color: $color-header_footer;
+}
+
+.end {
+  justify-content: end;
+}
+
+.center {
+  display: block;
+  margin-block-start: 1.35em;
+  margin-block-end: 1.00em;
+  font-size: 100%;
+  background-color: $color-header_footer;
+}
+
+.subtitulo {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.subtitulo_small {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.detalle {
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.backGroundColorBody {
+  background-color: $color-fondo;
+}
+
+.noPadding {
+  padding: 0%;
+}
+
+@media only screen and (min-width: 10px) and (max-width: 991px) {
+  /* Inicio Mobile */
+
+  header {
     width: 100%;
+  }
+
+  .filaFlexRowIndex {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3vh;
+  }
+
+  .footerSection {
+    margin: 0.1vh;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+
     background-color: $color-header_footer;
     color: white;
-    align-items: center;
-    align-content: center;
+    margin-top: 2%;
+
   }
-  
-  .topBarColumn {
+
+  .footerColumn {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: $color-header_footer;
+    justify-content: end;
+    justify-items: end;
+  }
+
+  .footerColumnRow {
     display: flex;
     flex-direction: row;
     flex: 1;
-    text-decoration: none;
     background-color: $color-header_footer;
-  }
-  
-  .end {
     justify-content: end;
+    justify-items: end;
   }
-  
-  .center {
-    display: block;
-    margin-block-start: 1.35em;
-    margin-block-end: 1.00em;
-    font-size: 100%;
-    background-color: $color-header_footer;
-  }
-  
-  .subtitulo {
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-  }
-  
-  .subtitulo_small{
-    display: block;
-    font-size: 1.17em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-  }
-  
-  .detalle{
-    display: block;
-    margin-block-start: 1.33em;
-    margin-block-end: 1.33em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-  }
-  
-  .backGroundColorBody{
-    background-color: $color-fondo;
-  }
-  
-  .noPadding{
-    padding: 0%;
-  }
-  
-  @media only screen and (min-width: 10px) and (max-width: 991px) {
-    /* Inicio Mobile */
-  
-    header {
-      width: 100%;
-    }
-  
-    .filaFlexRowIndex {
-      display: flex;
-      flex-direction: column;
-      padding-top: 3vh;
-    }
-  
-    .footerSection {
-      margin: 0.1vh;
-  
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      width: 100%;
-  
-      background-color: $color-header_footer;
-      color: white;
-      margin-top: 2%;
-  
-    }
-  
-    .footerColumn {
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-      background-color: $color-header_footer;
-      justify-content: end;
-      justify-items: end;
-    }
-  
-    .footerColumnRow {
-      display: flex;
-      flex-direction: row;
-      flex: 1;
-      background-color: $color-header_footer;
-      justify-content: end;
-      justify-items: end;
-    }
-  
-    .salonYNoticias {
-      display: flex;
-      flex-direction: column;
-      padding-left: 4%;
-      padding-right: 4%;
-      align-items: center;
-    }
-  
-    .publicidad {
-      padding-top: 1vh;
-      padding-left: 1vh;
-      padding-right: 1vh;
-      border: 0.1vh;
-      vertical-align: baseline;
-    }
-  
-    .salon_juego {
-      width: 35%;
-      height: 35%;
-    }
-  
-    .filaFlexRow {
-      display: flex;
-      flex-direction: column;
-      padding-top: 1vh;
-    }
-  
-    .contactoYMapa {
-      display: flex;
-      flex-direction: column;
-      padding-top: 1vh;
-      align-items: center;
-      justify-content: center;
-      justify-items: center;
-    }
-  
-    #descripcion {
-      padding-top: 1vh;
-    }
-  
-    #fotosTorneos {
-      padding-top: 1vh;
-    }
-  
-    .principal {
-      width: 80%;
-    }
-  
-    .mapa {
-      margin-top: 5vh;
-      margin-bottom: 5vh;
-    }
-  
-    .columnaFlexRowCenter {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      align-items: center;
-      padding-left: 10vh;
-      padding-right: 10vh;
-      padding-top: 5vh;
-    }
-  
-    .serviceJustify {
-      text-align: justify;
-    }
-  
-    .entrenadorArea {
-      display: grid;
-      grid-template-areas:
-        'entrenador1 entrenador2 entrenador3'
-        'entrenador4 entrenador5 entrenador6';
-      grid-template-columns: repeat(3, auto);
-      align-content: stretch;
-      gap: 10px;
-      padding: 0.5vw;
-      grid-column-gap: 10px;
-      grid-row-gap: 10px;
-    }
-  
-    .columnaFlexRowTrainers {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      align-items: center;
-    }
-  
-    .imagenEntrenadores {
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .imagenEntrenadoresSRC {
-      width: 100%;
-      height: 100%;
-    }
-  
-    .teEsperamos {
-      width: 125px;
-      height: 60px;
-      background-color: $color-resaltado;
-      font-size: medium;
-      text-align: center;
-      font-family: cursive;
-    }
-  
-    .reduceFont {
-      font-size: small;
-    }
-  
-  }
-  
-  /* Fin Mobile */
-  
-  @media only screen and (min-width: 992px) {
-    /* Inicio Desktop */
-  
-    header {
-      position: fixed;
-      width: 100%;
-    }
-  
-    .filaFlexRowIndex {
-      display: flex;
-      flex-direction: row;
-      padding-top: 3vh;
-    }
-  
-    .footerSection {
-      margin: 0.1vh;
-      line-height: 0.5vh;
-  
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      width: 100%;
-  
-      background-color: $color-header_footer;
-      color: white;
-      margin-top: 2%;
-  
-    }
-  
-    .footerColumn {
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-      background-color: $color-header_footer;
-      align-items: flex-start;
-      justify-content: end;
-      justify-items: end;
-    }
-  
-    .footerColumnRow {
-      display: flex;
-      flex-direction: row;
-      flex: 1;
-      background-color: $color-header_footer;
-      justify-content: end;
-    }
-  
-    .salonYNoticias {
-      display: flex;
-      flex-direction: row;
-      padding-left: 4%;
-      padding-right: 4%;
-    }
-  
-    li {
-      float: left;
-      background-color: $color-header_footer;
-    }
-  
-    .publicidad {
-      padding-top: 13vh;
-      padding-left: 1vh;
-      padding-right: 1vh;
-      border: 0.1vh;
-      vertical-align: baseline;
-    }
-  
-    .salon_juego {
-      width: 25%;
-      height: 25%;
-    }
-  
-    .filaFlexRow {
-      display: flex;
-      flex-direction: row;
-      padding-top: 12vh;
-    }
-  
-    .contactoYMapa {
-      display: flex;
-      flex-direction: row;
-      padding-top: 12vh;
-    }
-  
-    #descripcion {
-      padding-top: 11vh;
-    }
-  
-    #fotosTorneos {
-      padding-top: 12vh;
-    }
-  
-    .mapaiIframe {
-      width: 23vw;
-      height: 35vh;
-    }
-  
-    .principal {
-      width: 50%;
-      align-items: center;
-    }
-  
-    .mapa {
-      margin-top: 5vh;
-      margin-left: 5vh;
-      align-items: flex-end;
-      justify-content: end;
-      justify-items: end;
-      width: 50%;
-    }
-  
-    .columnaFlexRowCenter {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      align-items: center;
-      padding-left: 10vh;
-      padding-right: 10vh;
-    }
-  
-    .entrenadorArea {
-      display: grid;
-      grid-template-areas:
-        'entrenador1 entrenador2 entrenador3 entrenador4 entrenador5 entrenador6';
-      grid-template-columns: repeat(6, auto);
-      align-content: stretch;
-      gap: 10px;
-      padding: 0.5vw;
-      grid-column-gap: 10px;
-      grid-row-gap: 10px;
-    }
-  
-    .columnaFlexRowTrainers {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      align-items: center;
-      padding-left: 10vh;
-      padding-right: 10vh;
-      padding-top: 5vh;
-    }
-  
-    .imagenEntrenadores {
-      margin-left: 25%;
-      margin-right: 15%;
-      padding: 0.5vh;
-      border: 0.5vh;
-      vertical-align: baseline;
-  
-    }
-  
-    .teEsperamos {
-      width: 220px;
-      height: 100px;
-      background-color: $color-resaltado;
-      font-size: xx-large;
-      text-align: center;
-      /* margin-left: 120vh; */
-      font-family: cursive;
-      -ms-flex-align: center;
-    }
-  
-    .reduceFont {
-      font-size: medium;
-    }
-  
-  }
-  
-  /* Fin Desktop */
-  
-  .image30 {
-    width: 7vh;
-    height: 7vh;
-  }
-  
-  .image60 {
-    width: 60%;
-    height: 60%;
-  }
-  
-  .image90 {
-    width: 90%;
-    height: 90%;
-  }
-  
-  .principalContacto {
-    margin-top: 5vh;
-    display: flex;
-    justify-content: center;
-    vertical-align: middle;
-  }
-  
-  .principalContactoBotonEnviar {
-    display: flex;
-    justify-content: center;
-    vertical-align: middle;
-  
-  }
-  
-  .principalContacto>form {
-    width: 30rem;
-  }
-  
-  input[type=text],
-  textarea {
-    width: 100%;
-    padding: 1.2vh;
-    border: 0.1vh solid #ccc;
-    border-radius: 0.4vh;
-    box-sizing: border-box;
-    margin-top: 0.1vh;
-    margin-bottom: 0.2vh;
-    resize: vertical
-  }
-  
-  input[type=submit] {
-    width: 10rem;
-    background-color: $color-resaltado;
-    color: white;
-    padding: 1.2vh 2vh;
-    border: none;
-    border-radius: 0.4vh;
-    cursor: pointer;
 
-    &:hover {
-      background-color: #45a049;
-    } 
-
-    &:active {
-      box-shadow: 0 0.5vh #666;
-      transform: translateY(1vh);
-    }
-
-  }  
-  
-  .noticias {
+  .salonYNoticias {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    padding-top: 2%;
-  }
-  
-  .titulo {
-    text-align: center;
-    font-size: 3em;
+    padding-left: 4%;
+    padding-right: 4%;
     align-items: center;
-    color: $color-header_footer;
   }
-  
-  .textoNoticias {
-    display: flex;
-    text-align: justify;
-    align-items: center;
-    padding: 4%;
-  }
-  
-  .filaFlexRoxSig {
-    padding-top: 3vh;
-  }
-  
-  .imagenPublicidad {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .backGroundColor {
-    background-color: $color-header_footer;
-  }
-  
-  .justify {
-    text-align: justify;
-  }
-  
-  .noMargin {
-    margin: 0%;
-  }
-  
-  .filaFlexRowFotos {
-    display: flex;
-    flex-direction: row;
-    padding-top: 2vh;
-  }
-  
-  .filaFlexRowEntrenadores {
-    display: flex;
-    flex-direction: row;
-    padding-top: 2vh;
-  }
-  
-  .footerColumnPadding {
-    padding: 0.8vh;
-    background-color: $color-header_footer;
-  }
-  
-  .fa {
-    padding: 2.5vh;
-    width: 2.5vh;
-    text-align: center;
-    align-content: center;
-    text-decoration: none;
-    margin: 0.5vh 0.2vh;
-    background: $color-header_footer;
-    color: white;
-  
-    &:hover {
-      opacity: 0.1;
-    }
 
+  .publicidad {
+    padding-top: 1vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    border: 0.1vh;
+    vertical-align: baseline;
   }
-  
-  
-  
-  .galeria {
+
+  .salon_juego {
+    width: 35%;
+    height: 35%;
+  }
+
+  .filaFlexRow {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1vh;
+  }
+
+  .contactoYMapa {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1vh;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  #descripcion {
+    padding-top: 1vh;
+  }
+
+  #fotosTorneos {
+    padding-top: 1vh;
+  }
+
+  .principal {
+    width: 80%;
+  }
+
+  .mapa {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  .columnaFlexRowCenter {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    padding-top: 5vh;
+  }
+
+  .serviceJustify {
+    text-align: justify;
+  }
+
+  .entrenadorArea {
     display: grid;
     grid-template-areas:
-      'foto3 foto3 foto2 foto2 foto2 foto2'
-      'foto3 foto3 foto4 foto1 foto1 foto1'
-      'foto6 foto6 foto6 foto6 foto5 foto5';
-    grid-template-columns: repeat(6, auto);
+      'entrenador1 entrenador2 entrenador3'
+      'entrenador4 entrenador5 entrenador6';
+    grid-template-columns: repeat(3, auto);
     align-content: stretch;
-    gap: 0.3vh;
+    gap: 10px;
     padding: 0.5vw;
-    grid-column-gap: 0.3vh;
-    grid-row-gap: 0.3vh;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
   }
-  
-  .galeria>div>img {
+
+  .columnaFlexRowTrainers {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .imagenEntrenadores {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imagenEntrenadoresSRC {
     width: 100%;
     height: 100%;
-    object-fit: cover;
   }
-  
-  .foto1 {
-    grid-area: foto1;
 
-    &:hover {
-      opacity: 0.5;
-    }    
+  .teEsperamos {
+    width: 125px;
+    height: 60px;
+    background-color: $color-resaltado;
+    font-size: medium;
+    text-align: center;
+    font-family: cursive;
   }
-  
-  .foto2 {
-    grid-area: foto2;
 
-    &:hover {
-      opacity: 0.5;
-    }   
+  .reduceFont {
+    font-size: small;
+  }
+
+}
+
+/* Fin Mobile */
+
+@media only screen and (min-width: 992px) {
+  /* Inicio Desktop */
+
+  header {
+    position: fixed;
+    width: 100%;
+  }
+
+  .filaFlexRowIndex {
+    display: flex;
+    flex-direction: row;
+    padding-top: 3vh;
+  }
+
+  .footerSection {
+    margin: 0.1vh;
+    line-height: 0.5vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+    background-color: $color-header_footer;
+    color: white;
+    margin-top: 2%;
 
   }
-  
-  .foto3 {
-    grid-area: foto3;
 
-    &:hover {
-      opacity: 0.5;
-    }   
+  .footerColumn {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: $color-header_footer;
+    align-items: flex-start;
+    justify-content: end;
+    justify-items: end;
   }
-  
-  .foto4 {
-    grid-area: foto4;
 
-    &:hover {
-      opacity: 0.5;
-    }   
+  .footerColumnRow {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    background-color: $color-header_footer;
+    justify-content: end;
   }
-  
-  .foto5 {
-    grid-area: foto5;
 
-    &:hover {
-      opacity: 0.5;
-    }   
+  .salonYNoticias {
+    display: flex;
+    flex-direction: row;
+    padding-left: 4%;
+    padding-right: 4%;
   }
-  
-  .foto6 {
-    grid-area: foto6;
 
-    &:hover {
-      opacity: 0.5;
-    }   
+  li {
+    float: left;
+    background-color: $color-header_footer;
   }
-    
-  .galeria>div {
-    background-color: #464646;
+
+  .publicidad {
+    padding-top: 13vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    border: 0.1vh;
+    vertical-align: baseline;
   }
-  
-  .entreandor1 {
-    grid-area: entreandor1;
+
+  .salon_juego {
+    width: 25%;
+    height: 25%;
   }
-  
-  .entreandor2 {
-    grid-area: entreandor2;
+
+  .filaFlexRow {
+    display: flex;
+    flex-direction: row;
+    padding-top: 12vh;
   }
-  
-  .entreandor3 {
-    grid-area: entreandor3;
+
+  .contactoYMapa {
+    display: flex;
+    flex-direction: row;
+    padding-top: 12vh;
   }
-  
-  .entreandor4 {
-    grid-area: entreandor4;
+
+  #descripcion {
+    padding-top: 11vh;
   }
-  
-  .entreandor5 {
-    grid-area: entreandor5;
+
+  #fotosTorneos {
+    padding-top: 12vh;
   }
-  
-  .entreandor6 {
-    grid-area: entreandor6;
+
+  .mapaiIframe {
+    width: 23vw;
+    height: 35vh;
   }
-  
-  
-  .resaltar {
-    animation-duration: 3s;
-    animation-name: aparecer;
-    animation-iteration-count: infinite;
+
+  .principal {
+    width: 50%;
+    align-items: center;
   }
-  
-  .resaltar {
-    animation-iteration-count: 1;
+
+  .mapa {
+    margin-top: 5vh;
+    margin-left: 5vh;
+    align-items: flex-end;
+    justify-content: end;
+    justify-items: end;
+    width: 50%;
   }
-  
-  @keyframes aparecer {
-    0% {
-      opacity: 0;
-    }
-  
-    25% {
-      transform: rotate(45deg);
-    }
-  
-    100% {
-      opacity: 1;
-    }
+
+  .columnaFlexRowCenter {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-left: 10vh;
+    padding-right: 10vh;
   }
+
+  .entrenadorArea {
+    display: grid;
+    grid-template-areas:
+      'entrenador1 entrenador2 entrenador3 entrenador4 entrenador5 entrenador6';
+    grid-template-columns: repeat(6, auto);
+    align-content: stretch;
+    gap: 10px;
+    padding: 0.5vw;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+
+  .columnaFlexRowTrainers {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    padding-top: 5vh;
+  }
+
+  .imagenEntrenadores {
+    margin-left: 25%;
+    margin-right: 15%;
+    padding: 0.5vh;
+    border: 0.5vh;
+    vertical-align: baseline;
+
+  }
+
+  .teEsperamos {
+    width: 220px;
+    height: 100px;
+    background-color: $color-resaltado;
+    font-size: xx-large;
+    text-align: center;
+    /* margin-left: 120vh; */
+    font-family: cursive;
+    -ms-flex-align: center;
+  }
+
+  .reduceFont {
+    font-size: medium;
+  }
+
+}
+
+/* Fin Desktop */
+
+.image30 {
+  width: 7vh;
+  height: 7vh;
+}
+
+.image60 {
+  width: 60%;
+  height: 60%;
+}
+
+.image90 {
+  width: 90%;
+  height: 90%;
+}
+
+.principalContacto {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.principalContactoBotonEnviar {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+
+}
+
+.principalContacto>form {
+  width: 30rem;
+}
+
+input[type=text],
+textarea {
+  width: 100%;
+  padding: 1.2vh;
+  border: 0.1vh solid #ccc;
+  border-radius: 0.4vh;
+  box-sizing: border-box;
+  margin-top: 0.1vh;
+  margin-bottom: 0.2vh;
+  resize: vertical
+}
+
+input[type=submit] {
+  width: 10rem;
+  background-color: $color-resaltado;
+  color: white;
+  padding: 1.2vh 2vh;
+  border: none;
+  border-radius: 0.4vh;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #45a049;
+  }
+
+  &:active {
+    box-shadow: 0 0.5vh #666;
+    transform: translateY(1vh);
+  }
+
+}
+
+.noticias {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 2%;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 3em;
+  align-items: center;
+  color: $color-header_footer;
+}
+
+.textoNoticias {
+  display: flex;
+  text-align: justify;
+  align-items: center;
+  padding: 4%;
+}
+
+.filaFlexRoxSig {
+  padding-top: 3vh;
+}
+
+.imagenPublicidad {
+  width: 100%;
+  height: 100%;
+}
+
+.backGroundColor {
+  background-color: $color-header_footer;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.noMargin {
+  margin: 0%;
+}
+
+.filaFlexRowFotos {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2vh;
+}
+
+.filaFlexRowEntrenadores {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2vh;
+}
+
+.footerColumnPadding {
+  padding: 0.8vh;
+  background-color: $color-header_footer;
+}
+
+.fa {
+  padding: 2.5vh;
+  width: 2.5vh;
+  text-align: center;
+  align-content: center;
+  text-decoration: none;
+  margin: 0.5vh 0.2vh;
+  background: $color-header_footer;
+  color: white;
+
+  &:hover {
+    opacity: 0.1;
+  }
+
+}
+
+
+
+.galeria {
+  display: grid;
+  grid-template-areas:
+    'foto3 foto3 foto2 foto2 foto2 foto2'
+    'foto3 foto3 foto4 foto1 foto1 foto1'
+    'foto6 foto6 foto6 foto6 foto5 foto5';
+  grid-template-columns: repeat(6, auto);
+  align-content: stretch;
+  gap: 0.3vh;
+  padding: 0.5vw;
+  grid-column-gap: 0.3vh;
+  grid-row-gap: 0.3vh;
+}
+
+.galeria>div>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.foto1 {
+  grid-area: foto1;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.foto2 {
+  grid-area: foto2;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+}
+
+.foto3 {
+  grid-area: foto3;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.foto4 {
+  grid-area: foto4;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.foto5 {
+  grid-area: foto5;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.foto6 {
+  grid-area: foto6;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.entreandor1 {
+  grid-area: entreandor1;
+}
+
+.entreandor2 {
+  grid-area: entreandor2;
+}
+
+.entreandor3 {
+  grid-area: entreandor3;
+}
+
+.entreandor4 {
+  grid-area: entreandor4;
+}
+
+.entreandor5 {
+  grid-area: entreandor5;
+}
+
+.entreandor6 {
+  grid-area: entreandor6;
+}
+
+
+.resaltar {
+  animation-duration: 3s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+}
+
+.resaltar {
+  animation-iteration-count: 1;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    transform: rotate(45deg);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
