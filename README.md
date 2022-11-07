@@ -3,10 +3,11 @@
 En esta oportunidad, la preentrega3 contiene:
 
 -   Se incorporó BootStrap
--   Se incorporó SASS (Nesting)
+-   Se incorporó SASS (Nesting, Bucle, maps-get, mixin)
 -   Todas las vistas se encuentran adaptadas a Mobile y Desktop
 -   Se incorporó SEO
 -   Para un mejor posicionamiento, se incluyen las páginas en una carpeta aparte (sections) y se agrega ALT a todas las imágenes
+-   Se agrega comentarios en las páginas para un mejor entendimiento del HTML
 
 ## Responsive
 

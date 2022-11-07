@@ -1,3 +1,11 @@
-$color-resaltado: #F59E3A;
-$color-header_footer: #213b86;
-$color-fondo: #E4F1FE;
+$colores: ( /*Declaramos nuestro mapa*/
+    color-resaltado: #F59E3A,
+    color-header_footer: #213b86,
+    color-fondo: #E4F1FE,
+    color-visitado: #999999,
+); 
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}

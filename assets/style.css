@@ -9,6 +9,7 @@ ul {
   background-color: #213b86;
   margin-top: 0.15vh;
   margin-bottom: 0.15vh;
+  height: 100%;
   width: 100%; }
   ul li a {
     display: block;
@@ -27,6 +28,7 @@ ul {
 
 .topBar {
   display: flex;
+  height: auto;
   width: 100%;
   background-color: #213b86;
   color: white;
@@ -85,6 +87,7 @@ ul {
 @media only screen and (min-width: 10px) and (max-width: 991px) {
   /* Inicio Mobile */
   header {
+    height: auto;
     width: 100%; }
   .filaFlexRowIndex {
     display: flex;
@@ -95,6 +98,7 @@ ul {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    height: 100%;
     width: 100%;
     background-color: #213b86;
     color: white;
@@ -126,8 +130,8 @@ ul {
     border: 0.1vh;
     vertical-align: baseline; }
   .salon_juego {
-    width: 35%;
-    height: 35%; }
+    height: 35%;
+    width: 35%; }
   .filaFlexRow {
     display: flex;
     flex-direction: column;
@@ -144,6 +148,7 @@ ul {
   #fotosTorneos {
     padding-top: 1vh; }
   .principal {
+    height: 100%;
     width: 80%; }
   .mapa {
     margin-top: 5vh;
@@ -176,11 +181,11 @@ ul {
     display: flex;
     flex-direction: column; }
   .imagenEntrenadoresSRC {
-    width: 100%;
-    height: 100%; }
+    height: 100%;
+    width: 100%; }
   .teEsperamos {
-    width: 125px;
     height: 60px;
+    width: 125px;
     background-color: #F59E3A;
     font-size: medium;
     text-align: center;
@@ -193,6 +198,7 @@ ul {
   /* Inicio Desktop */
   header {
     position: fixed;
+    height: auto;
     width: 100%; }
   .filaFlexRowIndex {
     display: flex;
@@ -204,6 +210,7 @@ ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    height: 100%;
     width: 100%;
     background-color: #213b86;
     color: white;
@@ -237,8 +244,8 @@ ul {
     border: 0.1vh;
     vertical-align: baseline; }
   .salon_juego {
-    width: 25%;
-    height: 25%; }
+    height: 25%;
+    width: 25%; }
   .filaFlexRow {
     display: flex;
     flex-direction: row;
@@ -252,9 +259,10 @@ ul {
   #fotosTorneos {
     padding-top: 12vh; }
   .mapaiIframe {
-    width: 23vw;
-    height: 35vh; }
+    height: 35vh;
+    width: 23vw; }
   .principal {
+    height: 100%;
     width: 50%;
     align-items: center; }
   .mapa {
@@ -263,6 +271,7 @@ ul {
     align-items: flex-end;
     justify-content: end;
     justify-items: end;
+    height: 100%;
     width: 50%; }
   .columnaFlexRowCenter {
     display: flex;
@@ -295,8 +304,8 @@ ul {
     border: 0.5vh;
     vertical-align: baseline; }
   .teEsperamos {
-    width: 220px;
     height: 100px;
+    width: 220px;
     background-color: #F59E3A;
     font-size: xx-large;
     text-align: center;
@@ -308,16 +317,16 @@ ul {
 
 /* Fin Desktop */
 .image30 {
-  width: 7vh;
-  height: 7vh; }
+  height: 7vh;
+  width: 7vh; }
 
 .image60 {
-  width: 60%;
-  height: 60%; }
+  height: 60%;
+  width: 60%; }
 
 .image90 {
-  width: 90%;
-  height: 90%; }
+  height: 90%;
+  width: 90%; }
 
 .principalContacto {
   margin-top: 5vh;
@@ -335,6 +344,7 @@ ul {
 
 input[type=text],
 textarea {
+  height: auto;
   width: 100%;
   padding: 1.2vh;
   border: 0.1vh solid #ccc;
@@ -353,14 +363,15 @@ input[type=submit] {
   border-radius: 0.4vh;
   cursor: pointer; }
   input[type=submit]:hover {
-    background-color: #45a049; }
+    background-color: #213b86; }
   input[type=submit]:active {
-    box-shadow: 0 0.5vh #666;
+    box-shadow: 0 0.5vh #999999;
     transform: translateY(1vh); }
 
 .noticias {
   display: flex;
   flex-direction: column;
+  height: 100%;
   width: 100%;
   padding-top: 2%; }
 
@@ -380,8 +391,8 @@ input[type=submit] {
   padding-top: 3vh; }
 
 .imagenPublicidad {
-  width: 100%;
-  height: 100%; }
+  height: 100%;
+  width: 100%; }
 
 .backGroundColor {
   background-color: #213b86; }
@@ -408,6 +419,7 @@ input[type=submit] {
 
 .fa {
   padding: 2.5vh;
+  height: 100%;
   width: 2.5vh;
   text-align: center;
   align-content: center;
@@ -429,57 +441,63 @@ input[type=submit] {
   grid-row-gap: 0.3vh; }
 
 .galeria > div > img {
-  width: 100%;
   height: 100%;
+  width: 100%;
   object-fit: cover; }
 
 .foto1 {
   grid-area: foto1; }
-  .foto1:hover {
-    opacity: 0.5; }
+
+.foto1:hover {
+  opacity: 0.5; }
 
 .foto2 {
   grid-area: foto2; }
-  .foto2:hover {
-    opacity: 0.5; }
+
+.foto2:hover {
+  opacity: 0.5; }
 
 .foto3 {
   grid-area: foto3; }
-  .foto3:hover {
-    opacity: 0.5; }
+
+.foto3:hover {
+  opacity: 0.5; }
 
 .foto4 {
   grid-area: foto4; }
-  .foto4:hover {
-    opacity: 0.5; }
+
+.foto4:hover {
+  opacity: 0.5; }
 
 .foto5 {
   grid-area: foto5; }
-  .foto5:hover {
-    opacity: 0.5; }
+
+.foto5:hover {
+  opacity: 0.5; }
 
 .foto6 {
   grid-area: foto6; }
-  .foto6:hover {
-    opacity: 0.5; }
 
-.entreandor1 {
-  grid-area: entreandor1; }
+.foto6:hover {
+  opacity: 0.5; }
 
-.entreandor2 {
-  grid-area: entreandor2; }
+.entrenador1 {
+  grid-area: entrenador1; }
 
-.entreandor3 {
-  grid-area: entreandor3; }
+.entrenador2 {
+  grid-area: entrenador2; }
 
-.entreandor4 {
-  grid-area: entreandor4; }
+.entrenador3 {
+  grid-area: entrenador3; }
 
-.entreandor5 {
-  grid-area: entreandor5; }
+.entrenador4 {
+  grid-area: entrenador4; }
 
-.entreandor6 {
-  grid-area: entreandor6; }
+.entrenador5 {
+  grid-area: entrenador5; }
+
+.entrenador6 {
+  grid-area: entrenador6; }
 
 .resaltar {
   animation-duration: 3s;
