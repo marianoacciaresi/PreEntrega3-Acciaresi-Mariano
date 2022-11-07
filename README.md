@@ -5,6 +5,8 @@ En esta oportunidad, la preentrega3 contiene:
 -   Se incorporó BootStrap
 -   Se incorporó SASS (Nesting)
 -   Todas las vistas se encuentran adaptadas a Mobile y Desktop
+-   Se incorporó SEO
+-   Para un mejor posicionamiento, se incluyen las páginas en una carpeta aparte
 
 ## Responsive
 
