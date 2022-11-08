@@ -28,7 +28,9 @@
     }
 }
 
-@media only screen and (min-width: 10px) and (max-width: 991px) { // Mobile
+@media only screen and (min-width: 10px) and (max-width: 1799px) {
+    // Mobile
+
     #descripcion {
         padding-top: 1vh;
     }
@@ -76,7 +78,16 @@
 
 }
 
-@media only screen and (min-width: 992px) { // Desktop
+@media only screen and (min-width: 991px) {
+
+    // Tablet
+    #descripcion {
+        padding-top: 11vh;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    // Desktop
 
     #descripcion {
         padding-top: 11vh;
