@@ -23,7 +23,8 @@
   display: flex;
   text-align: justify;
   align-items: center;
-  padding: 4%; }
+  padding: 4%;
+  flex-direction: row; }
 
 .imagenPublicidad {
   height: 100%;
@@ -317,9 +318,6 @@ input[type=submit] {
   .reduceFont {
     font-size: medium; } }
 
-.filaFlexRoxSig {
-  padding-top: 3vh; }
-
 @media only screen and (min-width: 10px) and (max-width: 991px) {
   .filaFlexRow {
     display: flex;
@@ -332,7 +330,11 @@ input[type=submit] {
   .filaFlexRow {
     display: flex;
     flex-direction: row;
-    padding-top: 12vh; } }
+    padding-top: 12vh; }
+  .serviceJustify {
+    text-align: justify; }
+  .filaFlexRoxSig {
+    padding-top: 3vh; } }
 
 ul {
   list-style-type: none;

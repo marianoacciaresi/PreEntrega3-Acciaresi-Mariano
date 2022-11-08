@@ -1,7 +1,3 @@
-.filaFlexRoxSig {
-    padding-top: 3vh;
-}
-
 @media only screen and (min-width: 10px) and (max-width: 991px) { // Mobile
 
     .filaFlexRow {
@@ -22,6 +18,14 @@
         display: flex;
         flex-direction: row;
         padding-top: 12vh;
+    }
+
+    .serviceJustify {
+        text-align: justify;
+    }
+
+    .filaFlexRoxSig {
+        padding-top: 3vh;
     }
 
 }

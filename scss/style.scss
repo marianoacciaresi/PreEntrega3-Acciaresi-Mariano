@@ -24,11 +24,11 @@
 }
 
 .image60 {
-  @include sizes(60%, 60%); // Width -  Height
+  @include sizes($total_image*0.6 , $total_image*0.6); // Width -  Height
 }
 
 .image90 {
-  @include sizes(90%, 90%); // Width -  Height
+  @include sizes($total_image*0.9 , $total_image*0.9); // Width -  Height
 }
 
 .justify {

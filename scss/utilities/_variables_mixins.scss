@@ -5,6 +5,8 @@ $colores: ( /*Declaramos nuestro mapa*/
     color-visitado: #999999,
 ); 
 
+$total_image: 100%;
+
 @mixin sizes($width, $height) {
     height: $height;
     width: $width;
