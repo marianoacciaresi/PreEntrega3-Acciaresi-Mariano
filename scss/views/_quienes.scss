@@ -1,0 +1,130 @@
+@for $i from 1 through 6 {
+    .entrenador#{$i} {
+        grid-area: entrenador#{$i};
+    }
+}
+
+.resaltar {
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+
+.resaltar {
+    animation-iteration-count: 1;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 10px) and (max-width: 991px) { // Mobile
+    #descripcion {
+        padding-top: 1vh;
+    }
+
+    .entrenadorArea {
+        display: grid;
+        grid-template-areas:
+            'entrenador1 entrenador2 entrenador3'
+            'entrenador4 entrenador5 entrenador6';
+        grid-template-columns: repeat(3, auto);
+        align-content: stretch;
+        gap: 10px;
+        padding: 0.5vw;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+    .columnaFlexRowTrainers {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .imagenEntrenadores {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagenEntrenadoresSRC {
+        @include sizes(100%, 100%); // Width -  Height
+    }
+
+    .teEsperamos {
+        @include sizes(125px, 60px); // Width -  Height
+        background-color: map-get($colores, color-resaltado);
+        font-size: medium;
+        text-align: center;
+        font-family: cursive;
+    }
+
+    .reduceFont {
+        font-size: small;
+    }
+
+}
+
+@media only screen and (min-width: 992px) { // Desktop
+
+    #descripcion {
+        padding-top: 11vh;
+    }
+
+    .entrenadorArea {
+        display: grid;
+        grid-template-areas:
+            'entrenador1 entrenador2 entrenador3 entrenador4 entrenador5 entrenador6';
+        grid-template-columns: repeat(6, auto);
+        align-content: stretch;
+        gap: 10px;
+        padding: 0.5vw;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+    .columnaFlexRowTrainers {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding-left: 10vh;
+        padding-right: 10vh;
+        padding-top: 5vh;
+    }
+
+    .imagenEntrenadores {
+        margin-left: 25%;
+        margin-right: 15%;
+        padding: 0.5vh;
+        border: 0.5vh;
+        vertical-align: baseline;
+
+    }
+
+    .teEsperamos {
+        @include sizes(220px, 100px); // Width -  Height
+        background-color: map-get($colores, color-resaltado);
+        font-size: xx-large;
+        text-align: center;
+        /* margin-left: 120vh; */
+        font-family: cursive;
+        -ms-flex-align: center;
+    }
+
+    .reduceFont {
+        font-size: medium;
+    }
+
+}

@@ -1,0 +1,85 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: map-get($colores, color-header_footer);
+    ;
+    margin-top: 0.15vh;
+    margin-bottom: 0.15vh;
+    @include sizes(100%, 100%); // Width -  Height
+
+
+    li a {
+        display: block;
+        color: WHITE;
+        text-align: center;
+        padding: 0.8vh 4.5vh;
+        text-decoration: solid;
+        background-color: map-get($colores, color-header_footer);
+
+        &:hover {
+            background-color: map-get($colores, color-resaltado);
+        }
+
+        &:visited {
+            color: map-get($colores, color-visitado);
+        }
+
+    }
+
+}
+
+.active {
+    background-color: map-get($colores, color-resaltado);
+}
+
+.topBar {
+    display: flex;
+    @include sizes(100%, auto); // Width -  Height
+    background-color: map-get($colores, color-header_footer);
+    color: white;
+    align-items: center;
+    align-content: center;
+}
+
+.topBarColumn {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    text-decoration: none;
+    background-color: map-get($colores, color-header_footer);
+}
+
+.end {
+    justify-content: end;
+}
+
+.center {
+    display: block;
+    margin-block-start: 1.35em;
+    margin-block-end: 1.00em;
+    font-size: 100%;
+    background-color: map-get($colores, color-header_footer);
+}
+
+@media only screen and (min-width: 10px) and (max-width: 991px) { // Mobile
+
+    header {
+        @include sizes(100%, auto); // Width -  Height
+    }
+
+
+}
+
+@media only screen and (min-width: 992px) { // Desktop
+
+    header {
+        position: fixed;
+        @include sizes(100%, auto); // Width -  Height
+    }
+
+    li {
+        float: left;
+        background-color: map-get($colores, color-header_footer);
+    }
+}

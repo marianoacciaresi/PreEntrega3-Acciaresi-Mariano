@@ -1,0 +1,113 @@
+.subtitulo {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.subtitulo_small {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.detalle {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+.noticias {
+    display: flex;
+    flex-direction: column;
+    @include sizes(100%, 100%); // Width -  Height
+    padding-top: 2%;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 3em;
+    align-items: center;
+    color: map-get($colores, color-header_footer);
+}
+
+.textoNoticias {
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    padding: 4%;
+}
+
+.imagenPublicidad {
+    @include sizes(100%, 100%); // Width -  Height
+}
+
+@media only screen and (min-width: 10px) and (max-width: 991px) { // Mobile
+
+    .filaFlexRowIndex {
+        display: flex;
+        flex-direction: column;
+        padding-top: 3vh;
+    }
+
+    .salonYNoticias {
+        display: flex;
+        flex-direction: column;
+        padding-left: 4%;
+        padding-right: 4%;
+        align-items: center;
+    }
+
+    .publicidad {
+        padding-top: 1vh;
+        padding-left: 1vh;
+        padding-right: 1vh;
+        border: 0.1vh;
+        vertical-align: baseline;
+    }
+
+    .salon_juego {
+        @include sizes(35%, 35%); // Width -  Height
+    }
+
+}
+
+@media only screen and (min-width: 992px) {  // Desktop
+
+    .filaFlexRowIndex {
+        display: flex;
+        flex-direction: row;
+        padding-top: 3vh;
+    }
+
+    .salonYNoticias {
+        display: flex;
+        flex-direction: row;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+
+    .publicidad {
+        padding-top: 13vh;
+        padding-left: 1vh;
+        padding-right: 1vh;
+        border: 0.1vh;
+        vertical-align: baseline;
+    }
+
+    .salon_juego {
+        @include sizes(25%, 25%); // Width -  Height
+    }
+}

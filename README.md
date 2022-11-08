@@ -8,6 +8,7 @@ En esta oportunidad, la preentrega3 contiene:
 -   Se incorporó SEO
 -   Para un mejor posicionamiento, se incluyen las páginas en una carpeta aparte (sections) y se agrega ALT a todas las imágenes
 -   Se agrega comentarios en las páginas para un mejor entendimiento del HTML
+-   Se organiza el contenido del style
 
 ## Responsive
 

@@ -1,0 +1,41 @@
+.galeria {
+    display: grid;
+    grid-template-areas:
+        'foto3 foto3 foto2 foto2 foto2 foto2'
+        'foto3 foto3 foto4 foto1 foto1 foto1'
+        'foto6 foto6 foto6 foto6 foto5 foto5';
+    grid-template-columns: repeat(6, auto);
+    align-content: stretch;
+    gap: 0.3vh;
+    padding: 0.5vw;
+    grid-column-gap: 0.3vh;
+    grid-row-gap: 0.3vh;
+}
+
+.galeria>div>img {
+    @include sizes(100%, 100%); // Width -  Height
+    object-fit: cover;
+}
+
+@for $i from 1 through 6 {
+    .foto#{$i} {
+        grid-area: foto#{$i};
+    }
+
+    .foto#{$i}:hover {
+        opacity: 0.5;
+    }
+}
+
+@media only screen and (min-width: 10px) and (max-width: 991px) { // Mobile
+    #fotosTorneos {
+        padding-top: 1vh;
+    }
+
+}
+
+@media only screen and (min-width: 992px) { // Desktop
+    #fotosTorneos {
+        padding-top: 12vh;
+    }
+}

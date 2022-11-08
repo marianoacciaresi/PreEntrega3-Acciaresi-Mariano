@@ -1,0 +1,101 @@
+.principalContacto {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.principalContactoBotonEnviar {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+
+}
+
+.principalContacto>form {
+    width: 30rem;
+}
+
+input[type=text],
+textarea {
+    @include sizes(100%, auto); // Width -  Height
+    padding: 1.2vh;
+    border: 0.1vh solid #ccc;
+    border-radius: 0.4vh;
+    box-sizing: border-box;
+    margin-top: 0.1vh;
+    margin-bottom: 0.2vh;
+    resize: vertical
+}
+
+input[type=submit] {
+    width: 10rem;
+    background-color: map-get($colores, color-resaltado);
+    color: white;
+    padding: 1.2vh 2vh;
+    border: none;
+    border-radius: 0.4vh;
+    cursor: pointer;
+
+    &:hover {
+        background-color: map-get($colores, color-header_footer);
+    }
+
+    &:active {
+        box-shadow: 0 0.5vh (map-get($colores, color-visitado));
+        transform: translateY(1vh);
+    }
+
+}
+
+.noMargin {
+    margin: 0%;
+}
+
+@media only screen and (min-width: 10px) and (max-width: 991px) { // Mobile
+    .contactoYMapa {
+        display: flex;
+        flex-direction: column;
+        padding-top: 1vh;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .principal {
+        @include sizes(80%, 100%); // Width -  Height
+    }
+
+    .mapa {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+
+}
+
+@media only screen and (min-width: 992px) { // Desktop
+
+    .contactoYMapa {
+        display: flex;
+        flex-direction: row;
+        padding-top: 12vh;
+    }
+
+    .mapaiIframe {
+        @include sizes(23vw, 35vh); // Width -  Height
+    }
+
+    .principal {
+        @include sizes(50%, 100%); // Width -  Height
+        align-items: center;
+    }
+
+    .mapa {
+        margin-top: 5vh;
+        margin-left: 5vh;
+        align-items: flex-end;
+        justify-content: end;
+        justify-items: end;
+        @include sizes(50%, 100%); // Width -  Height
+    }
+}

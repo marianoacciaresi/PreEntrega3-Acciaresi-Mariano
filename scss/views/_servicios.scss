@@ -1,0 +1,27 @@
+.filaFlexRoxSig {
+    padding-top: 3vh;
+}
+
+@media only screen and (min-width: 10px) and (max-width: 991px) { // Mobile
+
+    .filaFlexRow {
+        display: flex;
+        flex-direction: column;
+        padding-top: 1vh;
+    }
+
+    .serviceJustify {
+        text-align: justify;
+    }
+
+}
+
+@media only screen and (min-width: 992px) { // Desktop
+
+    .filaFlexRow {
+        display: flex;
+        flex-direction: row;
+        padding-top: 12vh;
+    }
+
+}
