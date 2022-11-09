@@ -59,29 +59,7 @@
   font-weight: bold;
 }
 
-@media only screen and (min-width: 10px) and (max-width: 991px) { // Mobile
-
-  .columnaFlexRowCenter {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    padding-left: 10vh;
-    padding-right: 10vh;
-    padding-top: 5vh;
-  }
-
-}
-
-@media only screen and (min-width: 992px) { // Desktop
-
-  .columnaFlexRowCenter {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    padding-left: 10vh;
-    padding-right: 10vh;
-  }
-
+.columnaFlexRowCenter{
+  @include columnaFlexRowCenter($screen-mobile);
+  @include columnaFlexRowCenter($screen-desktop);
 }

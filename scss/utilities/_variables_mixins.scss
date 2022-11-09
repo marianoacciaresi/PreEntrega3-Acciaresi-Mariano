@@ -1,13 +1,48 @@
-$colores: ( /*Declaramos nuestro mapa*/
+$total_image: 100%;
+$screen-mobile: 576px;
+$screen-tablet: 768px;
+$screen-desktop: 1024px;
+
+$colores: (
+    /*Declaramos nuestro mapa*/
     color-resaltado: #F59E3A,
     color-header_footer: #213b86,
     color-fondo: #E4F1FE,
     color-visitado: #999999,
-); 
-
-$total_image: 100%;
+);
 
 @mixin sizes($width, $height) {
     height: $height;
     width: $width;
+}
+
+@mixin columnaFlexRowCenter($screen) {
+
+    @if $screen ==$screen-mobile {
+        @media only screen and (min-width: 10px) and (max-width: 991px) {
+            // Mobile
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            padding-left: 10vh;
+            padding-right: 10vh;
+            padding-top: 5vh;
+        }
+
+    }
+
+    @else {
+        @media only screen and (min-width: 992px) {
+            // Desktop
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            padding-left: 10vh;
+            padding-right: 10vh;
+        }
+
+    }
+
 }
