@@ -6,8 +6,8 @@ En esta oportunidad, la preentrega3 contiene:
 -   Se incorporó SASS 
         Nesting (footer and header)
         Bucle (galería)
-        maps-get (todos los sections scss con los colores)
-        mixin (style.scss y sizes en todos los sections scss)
+        maps-get (todos las views scss con los colores)
+        mixin (style.scss y sizes en todas las views scss)
         operaciones (style.scss para la clase columnaFlexRowCenter )
 -   Todas las vistas se encuentran adaptadas a Mobile y Desktop
 -   Se incorporó SEO
