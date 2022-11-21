@@ -5,6 +5,7 @@
         'foto3 foto3 foto4 foto1 foto1 foto1'
         'foto6 foto6 foto6 foto6 foto5 foto5';
     grid-template-columns: repeat(6, auto);
+    grid-template-rows: repeat(3, auto);
     align-content: stretch;
     gap: 0.3vh;
     padding: 0.5vw;
@@ -36,6 +37,6 @@
 
 @media only screen and (min-width: 992px) { // Desktop
     #fotosTorneos {
-        padding-top: 12vh;
+        padding-top: 1vh;
     }
 }

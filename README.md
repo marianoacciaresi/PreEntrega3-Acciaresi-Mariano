@@ -4,7 +4,7 @@ En esta oportunidad, la preentrega3 contiene:
 
 -   Se incorporó BootStrap
 -   Se incorporó SASS 
-        Nesting (footer and header)
+        Nesting (footer and header, style.scss)
         Bucle (galería)
         maps-get (todos las views scss con los colores)
         mixin (style.scss y sizes en todas las views scss)

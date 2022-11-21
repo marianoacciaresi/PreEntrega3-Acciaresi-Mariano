@@ -62,7 +62,7 @@
     padding-left: 4%;
     padding-right: 4%; }
   .publicidad {
-    padding-top: 13vh;
+    padding-top: 1vh;
     padding-left: 1vh;
     padding-right: 1vh;
     border: 0.1vh;
@@ -133,7 +133,7 @@ input[type=submit] {
   .contactoYMapa {
     display: flex;
     flex-direction: row;
-    padding-top: 12vh; }
+    padding-top: 1vh; }
   .mapaiIframe {
     height: 35vh;
     width: 23vw; }
@@ -154,6 +154,7 @@ input[type=submit] {
   display: grid;
   grid-template-areas: 'foto3 foto3 foto2 foto2 foto2 foto2' 'foto3 foto3 foto4 foto1 foto1 foto1' 'foto6 foto6 foto6 foto6 foto5 foto5';
   grid-template-columns: repeat(6, auto);
+  grid-template-rows: repeat(3, auto);
   align-content: stretch;
   gap: 0.3vh;
   padding: 0.5vw;
@@ -207,7 +208,7 @@ input[type=submit] {
 
 @media only screen and (min-width: 992px) {
   #fotosTorneos {
-    padding-top: 12vh; } }
+    padding-top: 1vh; } }
 
 .entrenador1 {
   grid-area: entrenador1; }
@@ -250,6 +251,7 @@ input[type=submit] {
     display: grid;
     grid-template-areas: 'entrenador1 entrenador2 entrenador3' 'entrenador4 entrenador5 entrenador6';
     grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
     align-content: stretch;
     gap: 10px;
     padding: 0.5vw;
@@ -278,15 +280,16 @@ input[type=submit] {
 
 @media only screen and (min-width: 991px) {
   #descripcion {
-    padding-top: 11vh; } }
+    padding-top: 1vh; } }
 
 @media only screen and (min-width: 1800px) {
   #descripcion {
-    padding-top: 11vh; }
+    padding-top: 1vh; }
   .entrenadorArea {
     display: grid;
     grid-template-areas: 'entrenador1 entrenador2 entrenador3 entrenador4 entrenador5 entrenador6';
     grid-template-columns: repeat(6, auto);
+    grid-template-rows: repeat(1, auto);
     align-content: stretch;
     gap: 10px;
     padding: 0.5vw;
@@ -330,7 +333,7 @@ input[type=submit] {
   .filaFlexRow {
     display: flex;
     flex-direction: row;
-    padding-top: 12vh; }
+    padding-top: 1vh; }
   .serviceJustify {
     text-align: justify; }
   .filaFlexRoxSig {
@@ -506,15 +509,10 @@ ul {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold; }
-
-.subtitulo_small {
-  display: block;
-  font-size: 1.17em;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold; }
+  .subtitulo_small {
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em; }
 
 @media only screen and (min-width: 10px) and (max-width: 991px) {
   .columnaFlexRowCenter {
@@ -534,3 +532,19 @@ ul {
     align-items: center;
     padding-left: 10vh;
     padding-right: 10vh; } }
+
+@media only screen and (min-width: 10px) and (max-width: 991px) {
+  .tituloH1 {
+    font-weight: bold;
+    padding-left: 1vh;
+    padding-top: 1vh;
+    color: #213b86;
+    font-size: 1.5em; } }
+
+@media only screen and (min-width: 992px) {
+  .tituloH1 {
+    font-weight: bold;
+    padding-left: 1vh;
+    padding-top: 13vh;
+    color: #213b86;
+    font-size: 1.5em; } }
