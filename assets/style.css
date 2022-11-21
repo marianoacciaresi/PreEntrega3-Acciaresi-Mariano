@@ -108,7 +108,7 @@ input[type=submit] {
   input[type=submit]:hover {
     background-color: #213b86; }
   input[type=submit]:active {
-    box-shadow: 0 0.5vh #999999;
+    box-shadow: 0 0.5vh white;
     transform: translateY(1vh); }
 
 .noMargin {
@@ -358,7 +358,7 @@ ul {
     ul li a:hover {
       background-color: #F59E3A; }
     ul li a:visited {
-      color: #999999; }
+      color: white; }
 
 .active {
   background-color: #F59E3A; }
