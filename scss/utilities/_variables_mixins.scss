@@ -8,8 +8,7 @@ $colores: (
     color-resaltado: #F59E3A,
     color-header_footer: #213b86,
     color-fondo: #E4F1FE,
-    // color-visitado: #999999,
-    color-visitado: white,
+    color-visitado: #999999,
 );
 
 @mixin sizes($width, $height) {
