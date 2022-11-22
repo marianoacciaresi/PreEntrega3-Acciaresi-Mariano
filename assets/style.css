@@ -327,7 +327,8 @@ input[type=submit] {
     flex-direction: column;
     padding-top: 1vh; }
   .serviceJustify {
-    text-align: justify; } }
+    text-align: justify;
+    padding-top: 1vh; } }
 
 @media only screen and (min-width: 992px) {
   .filaFlexRow {
@@ -335,7 +336,8 @@ input[type=submit] {
     flex-direction: row;
     padding-top: 1vh; }
   .serviceJustify {
-    text-align: justify; }
+    text-align: justify;
+    padding-top: 1vh; }
   .filaFlexRoxSig {
     padding-top: 3vh; } }
 
@@ -531,7 +533,8 @@ ul {
     text-align: center;
     align-items: center;
     padding-left: 10vh;
-    padding-right: 10vh; } }
+    padding-right: 10vh;
+    width: 50%; } }
 
 @media only screen and (min-width: 10px) and (max-width: 991px) {
   .tituloH1 {
