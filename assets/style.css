@@ -328,7 +328,13 @@ input[type=submit] {
     padding-top: 1vh; }
   .serviceJustify {
     text-align: justify;
-    padding-top: 1vh; } }
+    padding-top: 1vh; }
+  .videoVertical {
+    width: 324px;
+    height: 576px; }
+  .videoHorizontal {
+    width: 288px;
+    height: 162px; } }
 
 @media only screen and (min-width: 992px) {
   .filaFlexRow {
@@ -339,7 +345,13 @@ input[type=submit] {
     text-align: justify;
     padding-top: 1vh; }
   .filaFlexRoxSig {
-    padding-top: 3vh; } }
+    padding-top: 3vh; }
+  .videoVertical {
+    width: 324px;
+    height: 576px; }
+  .videoHorizontal {
+    width: 576px;
+    height: 324px; } }
 
 ul {
   list-style-type: none;
@@ -384,17 +396,16 @@ ul {
 .end {
   justify-content: end; }
 
-.center {
-  display: block;
-  margin-block-start: 1.35em;
-  margin-block-end: 1.00em;
-  font-size: 100%;
-  background-color: #213b86; }
-
 @media only screen and (min-width: 10px) and (max-width: 991px) {
   header {
     height: auto;
-    width: 100%; } }
+    width: 100%; }
+  .center {
+    display: block;
+    margin-block-start: 1.35em;
+    margin-block-end: 1.00em;
+    font-size: 70%;
+    background-color: #213b86; } }
 
 @media only screen and (min-width: 992px) {
   header {
@@ -403,6 +414,12 @@ ul {
     width: 100%; }
   li {
     float: left;
+    background-color: #213b86; }
+  .center {
+    display: block;
+    margin-block-start: 1.35em;
+    margin-block-end: 1.00em;
+    font-size: 100%;
     background-color: #213b86; } }
 
 .noPadding {
@@ -544,7 +561,15 @@ ul {
     color: #213b86;
     font-size: 1.5em; } }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-height: 768px) {
+  .tituloH1 {
+    font-weight: bold;
+    padding-left: 1vh;
+    padding-top: 17vh;
+    color: #213b86;
+    font-size: 1.5em; } }
+
+@media only screen and (min-width: 992px) and (min-height: 768px) {
   .tituloH1 {
     font-weight: bold;
     padding-left: 1vh;

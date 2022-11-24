@@ -11,6 +11,16 @@
         padding-top: 1vh;
     }
 
+    .videoVertical{
+        width: 324px;
+        height: 576px;
+    }
+
+    .videoHorizontal{
+        width: 288px;
+        height: 162px;
+    }
+
 }
 
 @media only screen and (min-width: 992px) { // Desktop
@@ -28,6 +38,16 @@
 
     .filaFlexRoxSig {
         padding-top: 3vh;
+    }
+
+    .videoVertical{
+        width: 324px;
+        height: 576px;
+    }
+
+    .videoHorizontal{
+        width: 576px;
+        height: 324px;
     }
 
 }

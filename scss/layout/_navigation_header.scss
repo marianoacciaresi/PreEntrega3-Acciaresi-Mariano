@@ -54,20 +54,19 @@ ul {
     justify-content: end;
 }
 
-.center {
-    display: block;
-    margin-block-start: 1.35em;
-    margin-block-end: 1.00em;
-    font-size: 100%;
-    background-color: map-get($colores, color-header_footer);
-}
-
 @media only screen and (min-width: 10px) and (max-width: 991px) { // Mobile
 
     header {
         @include sizes(100%, auto); // Width -  Height
     }
 
+    .center {
+        display: block;
+        margin-block-start: 1.35em;
+        margin-block-end: 1.00em;
+        font-size: 80%;
+        background-color: map-get($colores, color-header_footer);
+    }
 
 }
 
@@ -82,4 +81,13 @@ ul {
         float: left;
         background-color: map-get($colores, color-header_footer);
     }
+
+    .center {
+        display: block;
+        margin-block-start: 1.35em;
+        margin-block-end: 1.00em;
+        font-size: 100%;
+        background-color: map-get($colores, color-header_footer);
+    }
+
 }
